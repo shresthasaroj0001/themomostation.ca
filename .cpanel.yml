@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/themo841/public_html/
-    - /bin/cp -R repositories $DEPLOYPATH
+    - /bin/cp -R /home/repositories/themomostation.ca $DEPLOYPATH
