@@ -1,5 +1,5 @@
 ---
 deployment:
-  tasks:
-    - export DEPLOYPATH=/home/themo841/public_html/
-    - /bin/cp -R /home/repositories/themomostation.ca $DEPLOYPATH
+      tasks:
+        - export DEPLOYPATH=/home/themo841/public_html    # Add /<app_folder> if required
+        - /bin/cp -r * $DEPLOYPATH                        #copy all recursively to $DEPLOYPATH
