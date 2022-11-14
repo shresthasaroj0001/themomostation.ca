@@ -506,3 +506,19 @@
     padding-right: 0;
     border-right: none;
 }
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl,
+    .container-xxl {
+        max-width: inherit;
+    }
+}
+
+.fa {
+    color: red;
+}
