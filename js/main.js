@@ -90,12 +90,6 @@
         // $('#videoModal').on('hide.bs.modal', function (e) {
         //     $("#video").attr('src', $videoSrc);
         // })
-
-        $('#myModal').modal('toggle');
-
-        $('#btn_close').click( function(){
-            $('#myModal').modal('toggle');
-        });
     });
 
 
