@@ -30,14 +30,6 @@
     font-weight: 700 !important;
 }
 
-.back-to-top {
-    position: fixed;
-    display: none;
-    right: 45px;
-    bottom: 45px;
-    z-index: 99;
-}
-
 
 /*** Spinner ***/
 #spinner {
@@ -240,6 +232,7 @@
 .service-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     transition: .5s;
+    height: 100%;
 }
 
 .service-item:hover {
@@ -521,4 +514,47 @@
 
 .fa {
     color: red;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+.flex-container {
+    display: flex;           /* establish flex container */
+    /* flex-direction: column;   */
+    /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+    height: 100%;
+}
+.flex-row {
+    width: auto;
+    border: 1px solid blue;
+}
+
+.flex-item {
+    padding: 5px;
+    margin: 10px;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* for main page */
+.flex-parent {
+    display: flex;
+}
+
+.flex-item1 {
+    padding: .5em;
+}
+
+.flex-item1.no-shrink {
+    flex-shrink: 0;
 }
