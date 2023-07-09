@@ -92,7 +92,7 @@
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 17px;
     width: 0;
     z-index: 1;
     left: 30px;
@@ -124,20 +124,20 @@
 
     /* Place the timelime to the left */
     .timeline::after {
-        left: 31px;
-        margin-left: -6px;
+        left: 13px;
+        margin-left: 0px !important;
     }
 
     /* Full-width containers */
     .containerr {
         width: 100%;
-        padding-left: 50px;
+        padding-left: 37px;
         padding-right: 5px;
     }
 
     /* Make sure that all arrows are pointing leftwards */
     .containerr::before {
-        left: 42px;
+        left: 27px;
         border: medium solid white;
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
@@ -146,7 +146,7 @@
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
-        left: 15px;
+        left: 4px;
     }
 
     /* Make all right containers behave like the left ones */
@@ -158,4 +158,22 @@
         /* margin-right: 5px; */
         padding: 10px 10px;
     }
+
+    .content > h3 {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .content > p {
+        text-align: center;
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: initial;
+    }
+}
+
+.content > hr {
+    margin-top: 1px;
+    margin-bottom: 5px;
+    opacity: 1.25;
 }
