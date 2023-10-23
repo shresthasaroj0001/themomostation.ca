@@ -125,14 +125,14 @@
     /* Place the timelime to the left */
     .timeline::after {
         left: 13px;
-        margin-left: 0px !important;
+        /* margin-left: 0px !important; */
     }
 
     /* Full-width containers */
     .containerr {
         width: 100%;
-        padding-left: 37px;
-        padding-right: 5px;
+        padding-left: 38px;
+        padding-right: 10px;
     }
 
     /* Make sure that all arrows are pointing leftwards */
@@ -146,7 +146,7 @@
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
-        left: 4px;
+        left: 0px;
     }
 
     /* Make all right containers behave like the left ones */
