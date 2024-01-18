@@ -149,13 +149,17 @@
         margin: 0 !important
     }
 
-    /* .navbar-brand {
-        font-size: xx-large;
-    } */
+    .navbar-dark {
+        padding: 0.5rem 0.5rem 0rem 0.5rem !important;
+    }
 
+    
 }
 
 @media (min-width: 768px) {
+    h1.navbar-brand.p-0.text-primary.m-0 {
+        font-size: xx-large !important;
+    }
 
     .navbar-dark {
         position: absolute;
@@ -163,6 +167,7 @@
         top: 0;
         left: 0;
         z-index: 999;
+        padding-top: 1rem !important;
         /* background: transparent !important; */
     }
 
