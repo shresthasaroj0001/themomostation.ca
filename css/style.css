@@ -91,6 +91,9 @@
   }
 
 /*** Navbar ***/
+
+
+
 .navbar-dark .navbar-nav .nav-link {
     position: relative;
     margin-left: 25px;
@@ -121,9 +124,12 @@
     max-height: 45px;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 768px) {
+    /* The navigation bar */
     .sticky-top.navbar-dark {
-        position: relative;
+        position: fixed;
+        width: 100%;
+        border-bottom: 2px solid white;
     }
 
     .navbar-dark .navbar-collapse {
@@ -149,14 +155,15 @@
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+
     .navbar-dark {
         position: absolute;
         width: 100%;
         top: 0;
         left: 0;
         z-index: 999;
-        background: transparent !important;
+        /* background: transparent !important; */
     }
 
     .navbar-brand {
