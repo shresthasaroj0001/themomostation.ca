@@ -124,6 +124,11 @@
     max-height: 45px;
 }
 
+.py-3 {
+    padding-top: 0%;
+    padding-bottom: 0%; 
+}
+
 @media (max-width: 768px) {
     /* The navigation bar */
     .sticky-top.navbar-dark {
@@ -152,7 +157,6 @@
     .navbar-dark {
         padding: 0.5rem 0.5rem 0rem 0.5rem !important;
     }
-
     
 }
 
@@ -167,7 +171,7 @@
         top: 0;
         left: 0;
         z-index: 999;
-        padding-top: 1rem !important;
+        padding-top: 3px !important;
         /* background: transparent !important; */
     }
 
