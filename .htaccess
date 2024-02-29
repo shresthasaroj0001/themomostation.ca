@@ -1,3 +1,9 @@
 RewriteEngine On
+
+# Redirect requests for /index.html to the root
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
 RewriteRule ^index\.html$ https://themomostation.ca/ [R=301,L]
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.themomostation\.ca [NC]
+RewriteRule ^(.*)$ https://themomostation.ca/$1 [L,R=301]
