@@ -4,12 +4,8 @@ Disallow: /local
 Disallow: /assets
 Disallow: /data
 Disallow: /full
-Disallow: /123456
 Disallow: /client
 Disallow: /storage
 Disallow: /global_assets
 
-User-agent: *
-Allow: /contact.html
-Allow: /menu.html
 Sitemap: https://themomostation.ca/sitemap.xml

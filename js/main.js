@@ -68,12 +68,11 @@
         return false;
     });
 
-
-    
-
-
-
-    
-    
 })(jQuery);
 
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+      var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {});
+      myModal.show();
+    }, 5000);
+  });

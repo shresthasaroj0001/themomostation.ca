@@ -1,13 +1,19 @@
 RewriteEngine On
 
+# Redirect all www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+# Redirect all HTTP traffic to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # Redirect requests for /index.html to the root
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
 RewriteRule ^index\.html$ https://themomostation.ca/ [R=301,L]
 
-# Redirect www to non-www
-RewriteCond %{HTTP_HOST} ^www\.themomostation\.ca [NC]
-RewriteRule ^(.*)$ https://themomostation.ca/$1 [L,R=301]
+# Redirect requests for /menu to /menu.html
+RewriteRule ^menu$ /menu.html [L]
 
-# Redirect all other HTTP traffic to HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Redirect requests for /contact to /contact.html
+RewriteRule ^contact$ /contact.html [L]

@@ -71,21 +71,32 @@
             src="https://www.facebook.com/tr?id=843577580794709&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
     <style>
-            .custom-ul {
-                display: flex !important;
-            }
+        .custom-ul {
+            display: flex !important;
+        }
     
-            .custom-ul > .nav-item {
-                flex: 1 1 0px;
-                text-align: center;
-                margin: 4px;
+        .custom-ul>.nav-item {
+            flex: 1 1 0px;
+            text-align: center;
+            margin: 4px;
+        }
+    
+        img {
+            background: url(lib/owlcarousel/assets/ajax-loader.gif) 50% no-repeat;
+            /* border: 1px solid black;
+                    border-radius: 5px; */
+        }
+    
+        .p-4 {
+            padding-top: 0em !important;
+            padding-bottom: 0em !important;
+        }
+    
+        @media (min-width: 768px) {
+            #customHero {
+                padding-top: 3em;
             }
-
-            img {
-                background: url(lib/owlcarousel/assets/ajax-loader.gif) 50% no-repeat;
-                /* border: 1px solid black;
-                border-radius: 5px; */
-                }
+        }
     </style>
 
     <!-- Google tag (gtag.js) -->
@@ -143,15 +154,15 @@
             </nav>
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container my-5 py-5">
-                    <div class="row align-items-center g-5">
-                        <div class="col-lg-6 text-center text-lg-start">
+                <div class="container py-5">
+                    <div class="row align-items-center g-5" id="customHero">
+                        <div class="col-lg-6 text-center text-lg-start" style="margin-top: 0em;">
                             <h2 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious MOMO</h2>
                             <p class="text-white animated slideInLeft mb-4 pb-2">Explore our Authentic Nepali and Hakka Cuisine. . .</p>
                             <a href="tel:416-269-0202" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Call US</a>
                         </div>
-                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                            <img class="img-fluid" id="chillimomo" src="lib/owlcarousel/assets/ajax-loader.gif" alt="MO MO Picture">
+                        <div class="col-lg-6 text-center text-lg-end" style="margin-top: 0em;">
+                            <img class="img-fluid" id="chillimomo" src="img/test1.png" alt="MO MO Picture">
                         </div>
                     </div>
                 </div>
@@ -161,7 +172,7 @@
 
 
         <!-- Service Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl py-5" style="padding-top: 0;">
             <div class="container">
                 <div class="row g-4 flex-parent">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp flex-item1" data-wow-delay="0.1s">
@@ -219,11 +230,19 @@
         </div>
         <!-- Service End -->
 
-
         <!-- About Start -->
         <div class="container-xxl py-5" id="about_us">
             <div class="container">
                 <div class="row g-5 align-items-center">
+                    
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal" id="about_us" >About Us</h5>
+                        <h1 class="mb-4">Welcome to <i class="fa fa-fork text-primary me-2"></i>The MOMO Station</h1>
+                        <p class="mb-4">With over a decade of experience working as a chef in MIT, USA, I wanted to provide a fusion of authentic Nepalese food customized for food lovers in Canada. With my wife’s input of a degree in hospitality, we have established The MOMO Station to provide a wide range of flavours in traditional Nepalese dumplings and many more.</p>
+                        <p class="mb-4">We are a family run business. We only ask you give us the opportunity to serve you once and we promise you will come back regularly for more.</p>
+                        <p class="mb-4">With a cozy eat-in dining space, we specialize mainly on fast-food take-out service.</p>
+                        <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a> -->
+                    </div>
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6 text-start">
@@ -248,14 +267,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal" id="about_us" >About Us</h5>
-                        <h1 class="mb-4">Welcome to <i class="fa fa-fork text-primary me-2"></i>The MOMO Station</h1>
-                        <p class="mb-4">With over a decade of experience working as a chef in MIT, USA, I wanted to provide a fusion of authentic Nepalese food customized for food lovers in Canada. With my wife’s input of a degree in hospitality, we have established The MOMO Station to provide a wide range of flavours in traditional Nepalese dumplings and many more.</p>
-                        <p class="mb-4">We are a family run business. We only ask you give us the opportunity to serve you once and we promise you will come back regularly for more.</p>
-                        <p class="mb-4">With a cozy eat-in dining space, we specialize mainly on fast-food take-out service.</p>
-                        <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a> -->
-                    </div>
                 </div>
             </div>
         </div>
@@ -263,13 +274,13 @@
 
         <!-- Menu Start -->
         <a href="https://themomostation.ca/menu.html" style="display: block; text-decoration: none;">
-        <div class="container-xxl py-5" style="padding-top: 0rem !important;">
+        <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
                     <h1 class="mb-5">Most Popular Items</h1>
                 </div>
-                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 1em;">
                     <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5 custom-ul">
                         <li class="nav-item">
                             <div class="d-flex align-items-center text-start mx-3 ms-0 pb-3" data-bs-toggle="pill">
@@ -330,7 +341,7 @@
                             </div>
                         </li>    
                     </ul>
-                    <div class="tab-content">
+                    <div class="tab-content" style="margin-top: 1em;">
                         <div id="tab-1" class="tab-pane fade show p-0 active">
                             <div class="row g-4">
                                 <h4>Available in Halal Chicken And Veg.</h4>
@@ -338,8 +349,7 @@
                             <div class="row g-4">
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Steamed MOMO"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Steamed MOMO" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Steamed MOMO</span>
@@ -351,8 +361,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Jhol MOMO"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Jhol MOMO" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Jhol MOMO</span>
@@ -365,8 +374,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Kothe MOMO"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Kothe MOMO" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Kothe MOMO</span>
@@ -378,8 +386,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Fried MOMO"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Fried MOMO" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Fried MOMO</span>
@@ -391,8 +398,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Teriyaki MOMO"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Teriyaki MOMO" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Teriyaki MOMO</span>
@@ -405,8 +411,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Sweet&Sour MOMO"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Sweet&Sour MOMO" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Sweet and Sour MOMO</span>
@@ -419,8 +424,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Manchurian MOMO"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Manchurian MOMO" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Manchurian MOMO</span>
@@ -446,8 +450,7 @@
                                 </div> -->
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Chilli MOMO"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Chilli MOMO" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span><i class="fa fa-sharp fa-solid fa-pepper-hot"></i> Chilli MOMO</span>
@@ -460,8 +463,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Tikka Masala"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Tikka Masala" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Tikka Masala MOMO</span>
@@ -474,8 +476,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Hariyali Tikka MOMO"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Hariyali Tikka MOMO" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Hariyali Tikka MOMO:</span>
@@ -487,8 +488,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Tandoori MOMO"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Tandoori MOMO" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Tandoori MOMO</span>
@@ -501,8 +501,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Chaat MOMO"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Chaat MOMO" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span>Chaat MOMO</span>
@@ -515,30 +514,25 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Sandeko MOMO"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="Sandeko MOMO" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span><i class="fa fa-sharp fa-solid fa-pepper-hot"></i> Sandeko MOMO</span>
                                                 <span class="text-primary">$12.99</span>
                                             </h5>
-                                            <small class="fst-italic">Deep-fried momo tossed with fresh ginger garlic,
-                                                chillies, onions and special house sauce</small>
+                                            <small class="fst-italic">Deep-fried momo tossed with fresh ginger garlic, chillies, onions and special house sauce</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="MOMO 65"
-                                            style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/logo.png" alt="MOMO 65" height="80" width="80">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
                                                 <span><i class="fa fa-sharp fa-solid fa-pepper-hot"></i> MOMO 65</span>
                                                 <span class="text-primary">$12.99</span>
                                             </h5>
-                                            <small class="fst-italic">Deep-fried momo tossed with Szechuan sauce and
-                                                house
-                                                spices</small>
+                                            <small class="fst-italic">Deep-fried momo tossed with Szechuan sauce and house spices</small>
                                         </div>
                                     </div>
                                 </div>
@@ -596,6 +590,31 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="d-flex justify-content-center w-100">
+                            <h5 class="modal-title mb-0" style="line-height: 2;">10% off</h5>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Tantalize your taste buds</p>
+                        <p>With 10% off on lunchtime specials</p>
+                        <p>Hunger ? No Longer !!!</p>
+                        <br>
+                        <p>Lunch Special👆🏻</p>
+                        <p>Tuesday - Friday Till 3:PM</p>
+                        <p>10% Off On Any Dishes</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -627,13 +646,6 @@
             image3.src = this.src;
         };
         downloadingImage3.src = "img/fries.jpg";
-
-        var image4 = document.getElementById("chillimomo");
-        var downloadingImage4 = new Image();
-        downloadingImage4.onload = function () {
-            image4.src = this.src;
-        };
-        downloadingImage4.src = "img/test1.png";
 
     </script>
 
