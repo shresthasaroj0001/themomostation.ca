@@ -2,20 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://themomostation.ca/</loc>
-      <lastmod>2024-05-28T14:47:38+00:00</lastmod>
+      <lastmod>2024-08-2220:56:05.525Z</lastmod>
       <changefreq>monthly</changefreq>
-      <priority>1.0</priority>
    </url>
    <url>
       <loc>https://themomostation.ca/menu.html</loc>
-      <lastmod>2024-05-28T14:47:38+00:00</lastmod>
+      <lastmod>2024-08-2220:56:05.525Z</lastmod>
       <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
    </url>
    <url>
       <loc>https://themomostation.ca/contact.html</loc>
-      <lastmod>2024-05-28T14:47:35+00:00</lastmod>
+      <lastmod>2024-08-2220:56:05.525Z</lastmod>
       <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
    </url>
 </urlset>
