@@ -1,7 +1,6 @@
 RewriteEngine On
 
 # block access to the subdomain
-RewriteEngine On
 RewriteCond %{HTTP_HOST} ^order\.themomostation\.ca$
 RewriteRule ^ - [F,L]
 
@@ -15,10 +14,18 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Redirect requests for /index.html to the root
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
-RewriteRule ^index\.html$ https://themomostation.ca/ [R=301,L]
+RewriteRule ^index\.html$ / [R=301,L]
 
 # Redirect requests for /menu to /menu.html
 RewriteRule ^menu$ /menu.html [L]
 
 # Redirect requests for /contact to /contact.html
 RewriteRule ^contact$ /contact.html [L]
+
+# Remove index.php if present
+RewriteCond %{THE_REQUEST} ^.*index\.php
+RewriteRule ^(.*)index\.php$ /$1 [R=301,L]
+
+# Handle trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
