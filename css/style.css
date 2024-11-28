@@ -191,6 +191,10 @@
         padding: 0.5rem !important;
     }
 
+    .rms {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -253,6 +257,7 @@
 .section-title {
     position: relative;
     display: inline-block;
+    font-size: x-large;
 }
 
 .section-title::before {

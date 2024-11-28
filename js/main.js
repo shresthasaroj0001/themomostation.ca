@@ -74,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
      // var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {});
     var myModal = new bootstrap.Modal(document.getElementById('openingsoonModal'), {});
-
     myModal.show();
-    }, 1000);
+    }, 5000);
   });
