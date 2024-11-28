@@ -144,7 +144,11 @@
     align-items: center;
     margin-bottom: 0;
     line-height: 1;
-    font-size: x-large;
+    /* font-size: x-large; */
+}
+
+.modal-footer {
+    padding: 0 !important;
 }
 
 @media (max-width: 768px) {
@@ -171,10 +175,6 @@
         padding: 0 !important;
         margin: 0 !important
     }
-
-    .navbar-dark {
-        padding: 0.5rem 0.5rem 0rem 0.5rem !important;
-    }
     
     .py-5 {
         margin-bottom: 1em !important;
@@ -186,9 +186,18 @@
     .my-5 {
         margin-top: 0em !important;
     }
+
+    .modal-body {
+        padding: 0.5rem !important;
+    }
+
 }
 
 @media (min-width: 768px) {
+    .navbar-brand-p {
+        margin-right: 1rem !important;
+    }
+
     h1.navbar-brand.p-0.text-primary.m-0 {
         font-size: xx-large !important;
     }
