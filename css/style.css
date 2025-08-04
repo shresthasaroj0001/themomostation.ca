@@ -257,7 +257,7 @@
 .section-title {
     position: relative;
     display: inline-block;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .section-title::before {

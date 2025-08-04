@@ -16,8 +16,8 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
 RewriteRule ^index\.html$ / [R=301,L]
 
-# Redirect requests for /menu to /menu.html
-RewriteRule ^menu$ /menu.html [L]
+# Redirect requests for /menu or /menu.html to /markham.html
+RewriteRule ^menu(\.html)?$ /markham.html [L,R=301]
 
 # Redirect requests for /contact to /contact.html
 RewriteRule ^contact$ /contact.html [L]

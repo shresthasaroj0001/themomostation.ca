@@ -70,10 +70,10 @@
 
 })(jQuery);
 
-document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-     // var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {});
-    var myModal = new bootstrap.Modal(document.getElementById('openingsoonModal'), {});
-    //myModal.show();
-    }, 5000);
-  });
+// document.addEventListener("DOMContentLoaded", function() {
+//     setTimeout(function() {
+//      // var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {});
+//     var myModal = new bootstrap.Modal(document.getElementById('openingsoonModal'), {});
+//     myModal.show();
+//     }, 5000);
+//   });
