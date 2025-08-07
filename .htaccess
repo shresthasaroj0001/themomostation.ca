@@ -22,6 +22,12 @@ RewriteRule ^menu(\.html)?$ /markham.html [L,R=301]
 # Redirect requests for /contact to /contact.html
 RewriteRule ^contact$ /contact.html [L]
 
+# Redirect /markham to /markham.html
+RewriteRule ^markham$ /markham.html [L,R=301]
+
+# Redirect /danforth to /danforth.html
+RewriteRule ^danforth$ /danforth.html [L,R=301]
+
 # Remove index.php if present
 RewriteCond %{THE_REQUEST} ^.*index\.php
 RewriteRule ^(.*)index\.php$ /$1 [R=301,L]
@@ -29,3 +35,8 @@ RewriteRule ^(.*)index\.php$ /$1 [R=301,L]
 # Handle trailing slashes
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Redirect all invalid routes to homepage if file or directory does not exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ / [L,R=302]

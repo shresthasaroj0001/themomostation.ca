@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://themomostation.ca/</loc>
-      <lastmod>2024-08-2220:56:05.525Z</lastmod>
+      <lastmod>2024-08-22T20:56:05+00:00</lastmod>
       <changefreq>monthly</changefreq>
    </url>
    <url>
-      <loc>https://themomostation.ca/markham</loc>
+      <loc>https://themomostation.ca/markham.html</loc>
       <lastmod>2025-08-04T00:00:00+00:00</lastmod>
       <changefreq>monthly</changefreq>
    </url>
    <url>
-      <loc>https://themomostation.ca/danforth</loc>
+      <loc>https://themomostation.ca/danforth.html</loc>
       <lastmod>2025-08-04T00:00:00+00:00</lastmod>
       <changefreq>monthly</changefreq>
    </url>
    <url>
       <loc>https://themomostation.ca/contact.html</loc>
-      <lastmod>2024-08-2220:56:05.525Z</lastmod>
+      <lastmod>2024-08-22T20:56:05+00:00</lastmod>
       <changefreq>monthly</changefreq>
    </url>
 </urlset>
