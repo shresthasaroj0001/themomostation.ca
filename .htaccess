@@ -1,6 +1,6 @@
 RewriteEngine On
 
-# block access to the subdomain
+# Block access to the subdomain
 RewriteCond %{HTTP_HOST} ^order\.themomostation\.ca$
 RewriteRule ^ - [F,L]
 
@@ -16,17 +16,23 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
 RewriteRule ^index\.html$ / [R=301,L]
 
+# Set noindex header for /menu and /menu.html
+<IfModule mod_headers.c>
+    Header set X-Robots-Tag "noindex, follow" "expr=%{REQUEST_URI} =~ m#^/menu(\.html)?$#"
+    Header set X-Robots-Tag "noindex, follow" env=NOINDEX
+</IfModule>
+
 # Redirect requests for /menu or /menu.html to /markham.html
 RewriteRule ^menu(\.html)?$ /markham.html [L,R=301]
 
-# Redirect requests for /contact to /contact.html
-RewriteRule ^contact$ /contact.html [L]
+# Redirect /markham to /markham.html and set noindex header
+RewriteRule ^markham$ /markham.html [R=301,L,E=NOINDEX:1]
 
-# Redirect /markham to /markham.html
-RewriteRule ^markham$ /markham.html [L,R=301]
+# Redirect /danforth to /danforth.html and set noindex header
+RewriteRule ^danforth$ /danforth.html [R=301,L,E=NOINDEX:1]
 
-# Redirect /danforth to /danforth.html
-RewriteRule ^danforth$ /danforth.html [L,R=301]
+# Redirect /contact to /contact.html and set noindex header
+RewriteRule ^contact$ /contact.html [L,E=NOINDEX:1]
 
 # Remove index.php if present
 RewriteCond %{THE_REQUEST} ^.*index\.php
