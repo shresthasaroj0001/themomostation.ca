@@ -184,7 +184,7 @@
         margin-bottom: 1em;
     }
     .my-5 {
-        margin-top: 0em !important;
+        /* margin-top: 0rem !important; */
     }
 
     .modal-body {
@@ -257,7 +257,7 @@
 .section-title {
     position: relative;
     display: inline-block;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .section-title::before {
