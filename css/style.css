@@ -151,6 +151,26 @@
     padding: 0 !important;
 }
 
+.contact-list {
+    list-style: none; /* Removes standard bullet points */
+    padding: 0;       /* Removes default browser list indentation */
+    margin: 0;
+}
+
+.contact-list li {
+    display: flex;          /* Aligns icon and text side-by-side */
+    align-items: flex-start; /* Keeps icon aligned with the very first line of text */
+    margin-bottom: 0.5rem;  /* Replaces your mb-2 spacing */
+}
+
+.icon-fixed {
+    width: 16px;            /* Ensures all icons take up the exact same width space */
+    margin-right: 0.5rem;     /* Replaces me-3 spacing to push the text away */
+    flex-shrink: 0;         /* Prevents the icon from squeezing or distorting if text is long */
+    margin-top: 4px;        /* Optional: Vertically balances the icon with the first line of text */
+    text-align: center;  
+}
+
 @media (max-width: 768px) {
     /* The navigation bar */
     .sticky-top.navbar-dark {
@@ -195,11 +215,27 @@
         padding-left: 0%;
         padding-right: 0%;
     }
+
+    .row1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:20px;
+    }
 }
 
 @media (min-width: 768px) {
     .navbar-brand-p {
         margin-right: 1rem !important;
+        margin-bottom: 0rem !important;
+    }
+
+    .row1{
+        display: flex;
+    }
+    
+    .col1 {
+        flex: 1;
     }
 
     h1.navbar-brand.p-0.text-primary.m-0 {

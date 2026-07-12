@@ -31,6 +31,9 @@ RewriteRule ^markham$ /markham.html [R=301,L,E=NOINDEX:1]
 # Redirect /danforth to /danforth.html and set noindex header
 RewriteRule ^danforth$ /danforth.html [R=301,L,E=NOINDEX:1]
 
+# Redirect /whitby to /whitby.html and set noindex header
+RewriteRule ^whitby$ /whitby.html [R=301,L,E=NOINDEX:1]
+
 # Redirect /contact to /contact.html and set noindex header
 RewriteRule ^contact$ /contact.html [L,E=NOINDEX:1]
 
