@@ -77,6 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("openingsoonModal"),
       {},
     );
-    myModal.show();
+    //myModal.show();
   }, 5000);
 });
