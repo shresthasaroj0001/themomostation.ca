@@ -1,48 +1,80 @@
 RewriteEngine On
 
-# Block order subdomain
+#############################################
+# Block access to order subdomain
+#############################################
+
 RewriteCond %{HTTP_HOST} ^order\.themomostation\.ca$ [NC]
 RewriteRule ^ - [F,L]
 
 
+#############################################
 # Redirect www to non-www
+#############################################
+
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 
 
+#############################################
 # Force HTTPS
+#############################################
+
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 
+#############################################
 # Redirect index.html to root
+#############################################
+
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
 RewriteRule ^index\.html$ / [R=301,L]
 
 
+#############################################
 # Redirect old menu URLs
+#############################################
+
 RewriteRule ^menu(\.html)?$ /markham.html [R=301,L]
 
 
+#############################################
 # Clean location URLs
+#############################################
+
 RewriteRule ^markham$ /markham.html [R=301,L]
 RewriteRule ^danforth$ /danforth.html [R=301,L]
 RewriteRule ^whitby$ /whitby.html [R=301,L]
 
 
+#############################################
 # Clean contact URL
+#############################################
+
 RewriteRule ^contact$ /contact.html [R=301,L]
 
 
+#############################################
 # Remove index.php
+#############################################
+
 RewriteCond %{THE_REQUEST} ^.*index\.php
 RewriteRule ^(.*)index\.php$ /$1 [R=301,L]
 
 
-# Remove trailing slash
+#############################################
+# Remove trailing slash from URLs
+#############################################
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.+)/$ /$1 [R=301,L]
 
 
-# 404 handling
-ErrorDocument 404 /404.html
+#############################################
+# Redirect unknown pages to homepage
+#############################################
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ / [R=301,L]
