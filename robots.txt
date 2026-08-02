@@ -1,6 +1,6 @@
 User-agent: *
 
-# Disallow private, backend, or user-only paths
+# Private or non-public areas
 Disallow: /order/
 Disallow: /register
 Disallow: /local/
@@ -9,9 +9,5 @@ Disallow: /full/
 Disallow: /client/
 Disallow: /storage/
 
-# Only keep this if these folders do NOT contain SEO-relevant images or styles
-Disallow: /assets/
-Disallow: /global_assets/
-
-# Sitemap for crawl guidance
+# Sitemap
 Sitemap: https://themomostation.ca/sitemap.xml
