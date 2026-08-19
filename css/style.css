@@ -691,3 +691,28 @@
     object-fit: cover;
     float: left;
 }
+
+#halal-feedback {
+    height: 0;
+    width: 200px;
+    position: fixed;
+    right: -45px;
+    top: 50%;
+    z-index: 1000;
+    transform: rotate(-90deg);
+}
+
+#halal-feedback span {
+    display: block;
+    background: #009000;
+    height: 45px;
+    padding-top: 10px;
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    /* font-weight: bold; */
+    text-decoration: none;
+    border-radius: 8px;
+}
